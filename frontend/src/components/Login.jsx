@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Auth as auth }  from '../firebase/Firebase.jsx';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import 'style/css/bootstrap.min.css';
 
 export const Login = () => {
   const [email, setEmail] = useState('');

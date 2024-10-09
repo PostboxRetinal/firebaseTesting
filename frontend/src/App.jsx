@@ -1,16 +1,15 @@
-import { useState } from 'react'
-import { Login } from './components/Login.jsx'
-import './bootstrap.min.css'
+import React, { useState } from 'react';
+import { Register } from './components/Register.jsx'
 
 const App = () => {
-  const [showLogin, setShowLogin] = useState(true);
+  const [showRegister, setshowRegister] = useState(true);
 
   return (
     <>
-      <div id='login'>
-        {showLogin && <Login />}
-        <button onClick={() => setShowLogin(!showLogin)}>
-          {showLogin ? 'Hide Login' : 'Show Login'}
+      <div id='Register'>
+        {showRegister && <Register />}
+        <button onClick={() => setshowRegister(!showRegister)}>
+          {showRegister ? 'Hide Register' : 'Show Register'}
         </button>
       </div>
     </>
